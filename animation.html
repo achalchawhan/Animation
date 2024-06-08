@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>animation</title>
+	<style>
+		#box{
+			border: 2px solid white;
+			width: 1500px;
+			height: 680px;
+			position: relative;
+		}
+		img{
+			width: 1500px;
+			height: 680px;
+			position: relative;
+			
+		}
+		#img1
+		{
+			width: 150px;
+			height: 120px;
+			margin-top:-130px;
+			margin-left: -200px;
+			position: absolute;
+			animation: mymove 2s ease infinite;
+			transform-origin: center;
+/*			animation-direction: alternate;*/
+
+		}
+		@keyframes mymove {
+			from{
+				transform: translate(0px);
+				}
+				to{
+					transform: translate(2000px);
+				}	
+			}
+
+		#img2
+		{
+			width: 120px;
+			height: 80px;
+			margin-top:-105px;
+			margin-left: 1500px;
+			position: absolute;
+			animation: move 3s ease infinite;
+			transform-origin: center;
+		}
+
+
+
+		@keyframes move{
+			from{
+				transform: translate(0px,0px);
+				}
+				to{
+					transform: translate(-1700px);
+				}	
+			}
+
+         #img3
+		{
+			width: 120px;
+			height: 100px;
+			margin-top:-300px;
+			margin-left: -200px;
+			animation: mymove 4s ease infinite;
+			transform-origin: center;
+		}
+		
+		 #img4
+		{
+			width: 60px;
+			height:30px;
+			margin-top:-600px;
+			margin-left: -200px;
+			position: absolute;
+			animation: mymove 3s ease infinite;
+			transform-origin: center;
+		}	
+
+	</style>
+</head>
+<body>
+	<div id="box">
+		<img src="images/b.jpg">
+		<img id="img1" src="images/c1.png">
+		<img id="img2" src="images/c3.png">
+		<img id="img3" src="images/c21.png">
+		<img id="img4" src="images/a.png">
+		
+</div>
+	
+</body>
+</html>
